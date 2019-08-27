@@ -1,0 +1,355 @@
+<!doctype html>
+<!--
+|||||||||||||||||||||||||||||||||||||
+||    HTML/CSS Capstone Project    ||
+\\         Grandma Cooks           //
+ \\         WDD - 2018            //
+  \\    Author: Diego Beltran    //
+   \\                           //
+   ||     (\(\         /)/)     ||
+   ||     (-.-)       (-.-)     ||
+   ||     o_(")(") (")(")_o     ||
+|||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||
+-->
+
+<html lang="en">
+  <head>
+	  <title>Grandma Cooks - Capstone Project</title>
+		<meta charset="utf-8"/>
+		
+		<!--facebook stuff just for fun-->
+		<meta property="og:url" content="http://salsa.uwdce.ca/~d.beltran/HTML_CSS/Capstone_Project/index.html" />
+    <meta property="og:title" content="Capstone Project - by: Diego Beltran" />
+    <meta property="og:description" content="This is Diego's Capstone Project for WWD" />
+    <meta property="og:site_name" content="Grandma Cooks - Capstone Project" />
+    <meta property="og:image" content="http://salsa.uwdce.ca/~d.beltran/HTML_CSS/Capstone_Project/images/facebook_img.jpg" />
+    <meta property="og:image:width" content="416" />
+    <meta property="og:image:height" content="202" />
+		<!--end of facebook stuff-->
+		
+		<!--favicon start-->
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png"/>
+		<link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+		<!--favicon end-->
+		
+		<!--theme color-->
+		<meta name="theme-color" content="#463c37"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		
+		<link rel="stylesheet" 
+		      type="text/css" 
+					href="styles/stylesheet_desktop.css"
+					media="screen and (min-width: 768px)"
+		/>
+		
+		<link rel="stylesheet" 
+		      type="text/css" 
+					href="styles/stylesheet_mobile.css"
+					media="screen and (max-width: 767px)"
+		/>
+		
+		<link rel="stylesheet" 
+		      type="text/css" 
+					href="styles/stylesheet_print.css"
+					media="print"
+		/>
+		
+	  <link rel="icon" href="/images/favicona.png"/>
+		
+		<!--[if lt IE 9]>
+      <script src="script/ie81.css"></script>
+		  <style>
+			  body{
+					box-sizing: border-box;
+					font-family: 'Roboto', Arial, sans-serif;
+					font-size: 16px;
+					margin: 0;
+					background-color: #f9f9f9;
+					height: auto;
+				}
+			  header, section, footer, aside, 
+				  nav, main, article, figure {
+				  display: block; 
+				}
+				header, footer, main, #wrapper, #ie_msg{
+				  width: 960px;
+					margin: 0 auto;
+				}
+				#ie_msg{
+				  color: #a00;
+					text-transform: uppercase;
+					height: 200px;
+					font-size: 30px;
+				}
+				
+			</style>
+			
+			<div id="ie_msg">
+        Your Browser is not <strong>SUPPORTED</strong> by our
+				website, please upgrade your browser to a modern BROWSER or 
+				upgrade to a modern version of Internet Explorer to view all 
+				Modern Web Features. 
+				Thank you.
+			</div>
+    <![endif]-->
+		
+		<!--[if IE 9]>
+      <link rel="stylesheet" type="text/css" href="style/ie9.css"/>
+		  This browser does not support our Slideshow!
+		  Please Upgrade to a newer browser
+    <![endif]--> 
+		
+		
+		
+		<!--css styles-->	
+		<style>
+      /*form on contact us page start*/
+			#contact_info form{
+				color: #2b2b2b;
+				padding: 10px;
+				margin: 0 auto;
+				background-color: #fff;
+				min-height: 350px;
+				width: 90%;
+				box-shadow: 0 10px 12px rgba(0,0,0,0.2);
+				z-index: 10;
+				font-weight: 400;
+				font-size: 25px;
+				text-transform: uppercase;
+			}
+			#contact_info fieldset{
+				border: none;
+				font-size: 18px;
+			}
+			#contact_info legend{
+				font-size: 25px;
+				font-weight: 600;
+			}
+			#form label{
+				display: block;
+				float: left;
+				width: 170px;
+			}
+			#contact_info label.beforeit:after{
+				content: "*";
+				font-size: 150%;
+				color: #a44;
+				font-weight: 700;
+			}
+			#contact_info input[type="submit"],
+			#contact_info input[type="reset"]{
+				background-color: #f9f9f9;
+				font-size: 1.2rem;
+				height: 50px;
+				width: 170px;
+				border-radius: 10px;
+				border: 2px solid #5f6a70;
+				text-transform: uppercase
+			}
+
+			#contact_info input[type="submit"]:hover,
+			#contact_info input[type="reset"]:hover{
+				background-color: #ededed;
+			}
+			#content{
+				padding-bottom: 40px;
+			}
+			#contact_us #form p{
+				display: inline-block;
+			}
+			#contact_info input, textarea{
+				background-color: #f9f9f9;
+				border: 1px solid #d3e5e9;
+				border-radius: 5px;
+				height: 20px;
+				width: 200px;
+				padding: 5px;
+				margin-right: 70px;
+				margin-left: 10px;
+				text-transform: uppercase;
+			}
+			textarea{
+				width: 500px;
+				height: 200px;
+			}
+			input{
+				width: 230px;
+			}
+			/*form on contact us page end*/
+	  </style>
+	</head>
+  <body id="contact_us">
+	<div id="top_line_div"><!--dark line across--></div>
+	<div id="bg_header"><!--color across the view port--></div>
+	  <div id="wrapper">
+		  <header>
+			
+			<!--This is a div for the logo and tag line-->
+			  <div id="logo_tagline">
+				  <div id="logo">
+            <svg width="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path class="old_lady" d="M66.701,13.372c-0.707,0-1.406,0.036-2.1,0.09C63.508,7.234,58.076,2.5,51.533,2.5c-7.33,0-13.272,5.942-13.272,13.272    c0,4.388,2.13,8.276,5.411,10.693c-1.029,1.72-1.87,3.565-2.495,5.505c-1.369-0.188-2.765-0.292-4.184-0.292    c-16.852,0-30.512,13.66-30.512,30.51V97.5h61.022V66.986c14.416-0.426,26.014-12.279,26.014-26.797    C93.518,25.402,81.488,13.372,66.701,13.372z M66.701,62.189c-12.15,0-22-9.85-22-22c0-1.764,0.214-3.476,0.605-5.12    c2.112,0.467,4.305,0.721,6.557,0.721c7.619,0,14.574-2.82,19.896-7.463c4.508,3.934,10.191,6.551,16.455,7.262    c0.316,1.483,0.486,3.022,0.486,4.601C88.701,52.34,78.852,62.189,66.701,62.189z"/></g></g><path d="M89.139,96.956H83.84V78.354c0-2.927-1.633-4.744-4.262-4.744c-2.641,0-4.248,2.936-4.545,3.524l-4.734-2.378  c2.025-4.037,5.494-6.446,9.279-6.446c5.539,0,9.561,4.224,9.561,10.044V96.956z"/><g><g><circle cx="65.831" cy="41.394" r="2.409"/><circle cx="75.274" cy="41.394" r="2.409"/></g><path class="old_lady" d="M70.07,56.167c-5.574,0-10.533-3.339-12.631-8.507l3.125-1.268c1.58,3.89,5.311,6.403,9.506,6.403s7.926-2.513,9.506-6.403   l3.125,1.268C80.604,52.827,75.645,56.167,70.07,56.167z"/></g></svg>
+					</div><!--onerror this.src-->
+					<div id="tagline"><h1>Grandma Cooks</h1></div>
+				</div>
+			<!--End of div for logo and tag line-->
+			
+			
+			
+	    <!--Nav menu it will have 5 links/buttons-->
+			  <nav>
+				<div id="menu">
+					<!---->
+						
+						<a href="#" id="menulink" title="Hamburger Menu">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</a>
+						
+					<!---->
+					<!--start of menu list-->
+						<ul id="navlist">
+							<li><a href="index.html" class="pg_one" title="Home Page">home</a></li><!--Home-->
+							<li><a href="services.html" class="pg_two" title="Service Page">services</a></li><!--Services-->
+							<li><a href="about_us.html" class="pg_three" title="About Page">about us</a></li><!--about us-->
+							<li><a href="contact_us.html" class="pg_four" title="Contact Page">contact us</a></li><!--contact us-->
+							<li><a href="reviews.html" class="pg_five" title="Reviews">reviews</a></li><!--reviews-->
+						</ul>
+					<!--end of menu list-->
+				</div>
+				</nav>
+			</header>
+			
+			
+			<div id="content">
+			  <div id="order_online"><a href="order_online.html" title="order online">ORDER ONLINE</a></div>
+			  <h2>contact us</h2>
+			
+			  <div id="form"><!--made a div for the form-->
+				  <!--form starts here-->
+					<form method="post"
+								action="http://www.scott-media.com/test/form_display.php"
+								id="contact_info"
+								name="contact_info"
+								autocomplete="on"
+								>
+					  
+						<fieldset><!--first fieldset-->
+						  <legend>Personal Info</legend>
+							<p><!--First name text type-->
+							<label for="first_name" class="beforeit">First Name</label>
+							<input type="text"
+									 id="first_name" 
+									 name="first_name" 
+									 placeholder="Your First Name"
+									 required/>
+							</p>
+							<p><!--last name text type-->
+								<label for="last_name">Last Name</label>
+								<input type="text"
+											 id="last_name"
+											 name="last_name"
+											 placeholder="Your Last Name"
+											 />
+							</p>
+							<p><!--email address this is good-->
+								<label for="subject_text" class="beforeit">Subject</label>
+								<input type="text"
+											 name="subject_text"
+											 placeholder="Subject"
+											 id="subject_text" 
+											 required/>
+							</p>
+							<p><!--email address this is good-->
+								<label for="email_address" class="beforeit">Email Address</label>
+								<input type="email"
+											 name="email_address"
+											 id="email_address"
+											 placeholder="name@domain.com"
+											 required/>
+							</p>
+							
+							<!--tel number-->
+							<p><!--email address this is good-->
+								<label for="tel_number">Tel. Number</label>
+								<input type="tel"
+											 name="tel_number"
+											 id="tel_number" 
+											 placeholder="(204) 555-1234"
+											 />
+							</p>
+							<p><!--email address this is good-->
+								<label for="cel_number">Cell Number</label>
+								<input type="tel"
+											 name="cel_number"
+											 id="cel_number" 
+											 placeholder="Ex. (204) 555-1234"/>
+							</p>
+							<!--tel number end-->
+							
+							<!--text-input thing--> 
+							<p><!--send me comments-->
+							<label for="comments" class="beforeit">Message</label><br />
+							<textarea name="comments" 
+												id="comments" 
+												rows="5" 
+												cols="45"
+												accesskey="s"
+												title="Use Accesskey 's'"
+												placeholder="Message"
+												required></textarea>
+							</p>
+						</fieldset>
+
+						<!--buttons-->
+						<p><!--submit  button-->
+							<input type="submit" 
+										 value="Send form"
+										 id="send_button"
+										 />
+
+							<input type="reset" 
+										 value="clear form" />
+						</p><!--reset-->
+					</form><!--end of the form -->
+                  
+				</div>
+			</div>
+		
+		
+		</div>
+		<!--Footer start-->
+		<footer>
+			<div id="credits"><div id="contact_sec"><a href="contact_us.html" title="contact us">Contact us</a></div></div>
+			<div id="bottom_div"></div>
+			<div id="footer_items">
+			  <div id="inside_items"><!--three items in the footer-->
+					<div id="reviews_footer" style="margin-left: 8px;">
+					  <h3>Reviews</h3>
+						<p>- "Great Place"</p>
+						<p>- "Prices are great!"</p>
+						<p>- "Friendly Staff"</p>
+					</div>
+					
+					<div id="logo_bottom">
+						<svg width="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path class="old_lady" d="M66.701,13.372c-0.707,0-1.406,0.036-2.1,0.09C63.508,7.234,58.076,2.5,51.533,2.5c-7.33,0-13.272,5.942-13.272,13.272    c0,4.388,2.13,8.276,5.411,10.693c-1.029,1.72-1.87,3.565-2.495,5.505c-1.369-0.188-2.765-0.292-4.184-0.292    c-16.852,0-30.512,13.66-30.512,30.51V97.5h61.022V66.986c14.416-0.426,26.014-12.279,26.014-26.797    C93.518,25.402,81.488,13.372,66.701,13.372z M66.701,62.189c-12.15,0-22-9.85-22-22c0-1.764,0.214-3.476,0.605-5.12    c2.112,0.467,4.305,0.721,6.557,0.721c7.619,0,14.574-2.82,19.896-7.463c4.508,3.934,10.191,6.551,16.455,7.262    c0.316,1.483,0.486,3.022,0.486,4.601C88.701,52.34,78.852,62.189,66.701,62.189z"/></g></g><path d="M89.139,96.956H83.84V78.354c0-2.927-1.633-4.744-4.262-4.744c-2.641,0-4.248,2.936-4.545,3.524l-4.734-2.378  c2.025-4.037,5.494-6.446,9.279-6.446c5.539,0,9.561,4.224,9.561,10.044V96.956z"/><g><g><circle cx="65.831" cy="41.394" r="2.409"/><circle cx="75.274" cy="41.394" r="2.409"/></g><path class="old_lady" d="M70.07,56.167c-5.574,0-10.533-3.339-12.631-8.507l3.125-1.268c1.58,3.89,5.311,6.403,9.506,6.403s7.926-2.513,9.506-6.403   l3.125,1.268C80.604,52.827,75.645,56.167,70.07,56.167z"/></g></svg>
+					</div>
+					<div id="socialmedia">
+						<div id="sm_fb"><a href="#" title="facebook"></a></div>
+						<div id="sm_tw"><a href="#" title="twitter"></a></div>
+						<div id="sm_ig"><a href="#" title="instagram"></a></div>
+					</div>
+			  </div>
+			</div>
+			<div id="copyright">Diego Beltran &copy; (2018)</div>
+		</footer>
+			<!--footer end-->
+	</body>
+</html>
